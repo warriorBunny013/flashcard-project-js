@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Flashcards</title>
+  </head>
+  <body>
+    <nav class="nav" id="nav">
+      <h1>Flashcards</h1>
+      <div class="operations">
+        <button class="op" onclick="showCreateCardBox()">New card</button>
+        <!-- <button class="op" onclick="delFlashcards()">Delete all</button> -->
+      </div>
+    </nav>
+    <div class="container">
+      <div class="cardBox">
+        <h2>Create Flashcard</h2>
+        <!-- <label class="">question </label> -->
+        <input id="question" type="textarea" placeholder="  question" />
+
+        <!-- <label class="">answer </label> -->
+        <input id="answer" type="textarea" placeholder="  answer" />
+
+        <div class="new-operations">
+          <button class="newop" onclick="addFlashcard()">save</button>
+          <button class="newop" onclick="hideCreateBox()">close</button>
+        </div>
+      </div>
+      <div class="flashcards"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
